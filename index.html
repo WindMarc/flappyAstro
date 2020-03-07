@@ -35,7 +35,7 @@ function myFunction(x) {
  var ctx = myCanvas.getContext("2d");
  var FPS = 40;
  var jump_amount = -10;
- var max_fall_speed= +10;
+ var max_fall_speed= +5;
  var acceleration = 1;
  var pipe_speed = -2;
  var game_mode = 'prestart';
@@ -192,7 +192,7 @@ function add_all_my_pipes() {
     finish_line.velocity_x = pipe_speed;
     pipes.push(finish_line);
     }
-    
+
  var pipe_piece = new Image();
  pipe_piece.onload = add_all_my_pipes;
  pipe_piece.src = "http://s2js.com/img/etc/flappypipe.png" ;
